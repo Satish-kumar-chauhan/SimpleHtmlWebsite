@@ -1,0 +1,818 @@
+* {
+    padding: 0rem;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main img {
+    width: 60px;
+}
+
+.nav-item {
+    position: relative;
+    padding: 5px 30px;
+    background-color: #333;
+    border-right: 1px solid #a29b9b87;
+    border-bottom: 1px solid #1b1b1b;
+}
+
+.navbar-nav:first-child {
+    border-left: 1px solid #a29b9b87;
+}
+
+.nav-item a {
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+@media screen and (min-width:992px) {
+    .main {
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+    }
+    .navbar-nav .nav-item:first-child::before {
+        content: '';
+        position: absolute;
+        left: -19px;
+        top: 0px;
+        border-left: 18px solid transparent;
+        border-top: 48px solid #333;
+    }
+    .navbar-nav .nav-item:last-child::after {
+        content: '';
+        position: absolute;
+        right: -19px;
+        top: 0px;
+        border-right: 18px solid transparent;
+        border-top: 48px solid #333;
+    }
+}
+
+.navbar-light .navbar-nav .nav-item:hover,
+.navbar-light .navbar-nav .nav-item.active {
+    border-bottom: 1px solid green;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-item.active a,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.top-slider {
+    position: relative;
+}
+
+.main-img img {
+    width: 100%;
+    height: 620px;
+}
+
+.heading-main {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-main h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.heading-main h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #da3737;
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.heading-main h6 {
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.heading-main button,
+.my-resume button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px 60px;
+    border: none;
+    background-color: #1b1b1b;
+    color: #fff;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.heading-main button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.heading-main button:hover,
+.my-resume button:hover,
+#enquiry-modal:hover {
+    background-color: #da3737;
+    transition: 0.6s ease-in-out;
+    border: 1px soild #fff;
+}
+
+#enquiry-modal {
+    position: fixed;
+    right: -60px;
+    top: 280px;
+    transform: rotate(270deg);
+    border: none;
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 10px 20px;
+    width: 160px;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 999;
+}
+
+#enquiry-modal svg {
+    color: #da3737;
+}
+
+#enquiry-modal:hover#enquiry-modal svg {
+    color: #000;
+}
+
+.slider-form {
+    text-align: center;
+    position: fixed;
+    display: none;
+    width: 30%;
+    top: 17%;
+    right: 5%;
+    padding: 10px 30px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px #d0c0b3;
+    background-color: #8e8484a1;
+    z-index: 999;
+}
+
+.slider-form h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.slider-form img {
+    opacity: 90%;
+    width: 100%;
+}
+
+.slider-form input {
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    padding: 10px 30px;
+}
+
+.slider-form textarea {
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+    padding: 10px 30px;
+}
+
+.slider-form input:hover,
+.slider-form input:focus {
+    border: 1px dashed #9F2629;
+    cursor: pointer;
+}
+
+.slider-form textarea:hover,
+.slider-form textarea:focus {
+    border: 1px dashed #9F2629;
+    cursor: pointer;
+}
+
+.slider-form Button {
+    margin-top: 5px;
+    border: none;
+    padding: 12px 30px;
+    width: 100%;
+    background-color: #1b1b1b;
+    color: white;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.slider-form Button:hover,
+.contact-us .form-view button:hover {
+    background-color: #da3737;
+    transition: .6s ease-in-out;
+}
+
+#close {
+    color: #9F2629;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 50px;
+}
+
+.slider-form svg {
+    color: #fff;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.top-slider .sideNav {
+    position: fixed;
+    top: 15%;
+    width: 0px;
+    height: 500px;
+    background-color: #a29b9b87;
+    border-radius: 0px 20px 20px 0px;
+    text-align: center;
+    padding: 80px 0px;
+    overflow: hidden;
+    z-index: 999;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.top-slider .sideNav-open:hover {
+    background-color: #da3737;
+}
+
+.top-slider #open {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #000000d4;
+    color: #fff;
+    top: 17.5%;
+    text-align: center;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+    z-index: 999;
+    border: none;
+}
+
+.top-slider #open:hover {
+    background-color: #da3737;
+    color: #000;
+}
+
+.top-slider .sideNav>div {
+    height: 100px;
+}
+
+.top-slider .sideNav>div svg {
+    height: 50px;
+    width: 50px;
+}
+
+.details-about-me {
+    padding: 65px 0px 50px 0px;
+}
+
+.details-about-me .about-me-logo {
+    overflow-x: hidden;
+}
+
+.details-about-me .about-me-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details-about-me .about-me-logo img:hover {
+    opacity: 90%;
+}
+
+.about-me-head {
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.about-me-head h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    color: #da3737;
+    text-align: center;
+}
+
+.about-me-head p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #a29b9b;
+}
+
+.skills-bar {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+}
+
+.skills-bar h6 {
+    color: gray;
+}
+
+.progress {
+    margin-bottom: 10px;
+    height: 10px;
+    border-radius: 0;
+}
+
+.progress .progress-bar {
+    background-color: #da3737;
+}
+
+.services {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services .services-head {
+    color: #da3737;
+    font-size: 45px;
+    padding-bottom: 0;
+}
+
+.services .services-head h1 {
+    margin-bottom: 0;
+}
+
+.heading-bottom-line {
+    height: 5px;
+    width: 120px;
+    margin: auto;
+    background-color: #3890d0;
+    margin-bottom: 30px;
+}
+
+.overlay-main {
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.6s ease-in-out;
+    background-color: #0404049c;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.overlay p {
+    font-size: 11px !important;
+    color: #fff !important;
+    text-align: justify;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+.html button {
+    background-color: #e44d26;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+    padding: 3px 20px;
+    border: none;
+}
+
+.css button {
+    background-color: #3890d0;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+    padding: 3px 20px;
+    border: none;
+}
+
+.bootstrap button {
+    background-color: #563b7e;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+    padding: 3px 20px;
+    border: none;
+}
+
+.javascript button {
+    background-color: #cebb1b;
+    color: #fff;
+    font-size: 14px;
+    float: right;
+    padding: 3px 20px;
+    border: none;
+}
+
+.overlay button:hover {
+    background-color: #da3737;
+}
+
+.overlay-main:hover .overlay {
+    height: 45%;
+    bottom: 0;
+}
+
+.resume {
+    padding: 80px 0px;
+    background-color: #a29b9b;
+}
+
+.my-resume {
+    text-align: center;
+    color: #fff;
+}
+
+.my-resume h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    color: #da3737;
+}
+
+.my-resume p {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services {
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #f3f0f0
+}
+
+.services-head {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.services .services-data {
+    text-align: center;
+    width: 49%;
+    display: inline-block;
+}
+
+.services .services-data h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #000;
+}
+
+.services .services-data p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #a29b9b;
+}
+
+.services .services-data svg {
+    height: 60px;
+    width: 60px;
+}
+
+.services .web-view {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services .web-view .image-container {
+    position: relative;
+    width: 260px;
+    height: 400px;
+    bottom: -200px;
+    margin: 0px auto;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
+.services .web-view .image-container img {
+    position: absolute;
+    width: 76%;
+    height: 50%;
+    left: 13%;
+    transition: 0.5s;
+}
+
+.services .web-view .image-container img:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+}
+
+.services .web-view .image-container:hover img:nth-child(4) {
+    transform: rotate(-45deg) translate(80px, -80px);
+    opacity: 1;
+}
+
+.services .web-view .image-container:hover img:nth-child(3) {
+    transform: rotate(-45deg) translate(60px, -60px);
+    opacity: 0.8;
+}
+
+.services .web-view .image-container:hover img:nth-child(2) {
+    transform: rotate(-45deg) translate(40px, -40px);
+    opacity: 0.6;
+}
+
+.services .web-view .image-container:hover img:nth-child(1) {
+    transform: rotate(-45deg) translate(20px, -20px);
+    opacity: 0.4;
+}
+
+.services .web-view h2 {
+    position: absolute;
+    top: 0%;
+}
+
+.services .web-view h2 svg {
+    color: #da3737;
+}
+
+.contact-us {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 0px 40px 0px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.contact-us .form-view {
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.form-view-head {
+    overflow: hidden;
+}
+
+.contact-us .form-view-head h1 {
+    display: inline;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    color: #da3737;
+}
+
+.contact-us .form-view-head svg {
+    color: #187b98;
+    height: 45px;
+    width: 45px;
+}
+
+.contact-us .form-view input {
+    width: 49%;
+    padding: 10px 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.contact-us .form-view textarea {
+    width: 98.5%;
+    padding: 10px 30px;
+    height: 80px;
+    margin-top: 12px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.contact-us .form-view Button {
+    float: right;
+    margin-top: 8px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: .5rem 1rem;
+    background-color: #1b1b1b;
+    color: #fff;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.our-contact {
+    position: relative;
+    background-color: #1b1b1b;
+    padding: 20px;
+}
+
+@media screen and (max-width:991px) {
+    .our-contact {
+        margin-top: 10px;
+    }
+}
+
+.our-contact-info {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.our-contact-info svg {
+    color: #da3737;
+    position: absolute;
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.our-contact-info h5 {
+    color: #3890d0;
+    padding-left: 33px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.our-contact-info p,
+.our-contact-info address {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 33px;
+}
+
+.our-contact-map {
+    position: relative;
+    height: 100%;
+}
+
+@media screen and (max-width:1200px) {
+    .our-contact-map {
+        margin-top: 10px;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.goto-up {
+    position: fixed;
+    bottom: 5px;
+    background-color: #000;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 2.5;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #da3737;
+}
+
+.goto-up:hover {
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+.goto-up svg {
+    color: #fff;
+}
+
+.goto-up:hover.goto-up svg {
+    color: #da3737;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 99;
+    /* Sit on top */
+    overflow-X: hidden;
+    overflow-Y: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 20px auto;
+    background-color: #f3f0f0;
+    padding: 20px;
+    text-align: justify;
+    border: none;
+    width: 60%;
+    overflow: scroll;
+    height: 90%;
+    overflow-x: hidden;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+.modal-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+.modal-content h1 {
+    color: #da3737;
+    text-align: center;
+}
+
+.modal-content p {
+    border-left: 4px solid #3890d0;
+    padding: 10px;
+    font-size: 14px !important;
+    color: #505050 !important;
+}
+
+.modal-content img {
+    padding: 20px 0px;
+    height: 150px;
+    width: 500px;
+    margin: 0px auto;
+}
+
+.modal-content ul li,
+.modal-content ol li {
+    font-size: 14px !important;
+    color: #505050 !important;
+    padding: 10px 0px;
+}
+
+
+/* The Close Button */
+
+.close1 {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 33px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:991px) {
+    .slider-form {
+        width: 90%;
+        right: 5%;
+    }
+    .web-view {
+        width: 100%;
+        height: 500px;
+    }
+    .services .web-view .image-container {
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+    }
+    .services .web-view .image-container img {
+        left: 25%;
+        width: 50%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-img img {
+        height: 400px;
+    }
+}
